@@ -1,0 +1,282 @@
+.row {
+	@include px-padding-lr(2,2);
+
+	@include mq($bp4) {
+		@include px-padding-lr(0,0);
+	}
+}
+
+//
+// Frame
+//
+
+.holder {
+	//background-color: $beta-text-color;
+	@include padding-tb(0,0);
+
+	@include mq($bp4) {
+		@include padding-tb(0,0);
+	}
+}
+
+//
+// Header
+//
+
+.header-holder {
+	@include mq($bp3) {
+		@include padding-top(0);
+	}
+
+	h1 
+	{
+		font-size: 1.6em;
+		color: $beta-text-color;
+		@include padding-tb(1,0.4);
+		@include mq($bp3) {
+			@include padding-tb(3,0.5 );
+			font-size: 2.5em;
+		}
+		line-height: 1.5em;
+	}
+
+}
+
+.header {
+	border-bottom: 1px solid $alpha-text-color;
+
+	@include padding-tb(0.8,0.8);
+}
+
+.header-left {
+	width: 250px;
+	float: left;
+
+	.logo {
+		
+		width: 135px;
+		height: 25px;
+
+		@include mq($bp2) {
+			width: 190px;
+			height: 35px;
+		}
+
+		@include mq($bp3) {
+			width: 244px;
+			height: 45px;
+		}
+	}
+}
+
+.header-right {
+	//width: 140px;
+	float: right;
+}
+
+	.header .inner {
+		@extend %clearfix;
+		border-bottom: 1px solid lighten($alpha-text-color,60);
+	}
+
+
+
+	.header-holder .inner {
+		@include mq($bp3) {
+			@include padding-tb(1,1);
+		}
+
+		@include mq($bp4) {
+			@include padding-tb(2,1);
+		}
+	}
+
+
+
+
+
+
+// main
+//
+
+.main {
+	border-top: 1px solid $alpha-ui-color;
+	// background-color: $beta-text-color;
+}
+
+.dolder {
+	@include padding-tb(0,3);
+}
+
+
+//
+// Doormat
+//
+
+.doormat-holder {
+	@include padding-bottom(1);
+
+	@include mq($bp4) {
+		@include padding-bottom(2);
+	}
+}
+
+	.doormat-col-4 {
+		@include box-(12,1,1);
+
+		@include mq($bp4) {
+			@include box-(4,1,1);
+		}
+	}
+
+
+
+
+
+//
+// Footer
+//
+
+.footer-holder {
+	background-color: lighten($alpha-text-color,74);
+	color: $alpha-text-color;
+	position: relative;
+	p {
+		padding: 0;
+	}
+}
+
+.footer {
+	@include box-(12,0,0);
+		@include padding-tb(2,1.5);
+}
+
+.pre-footer {
+	background-color: $alpha-text-color;
+	color: $beta-text-color;
+	@include padding-tb(0,0.7);
+}
+
+
+.contact-info {
+	
+	width: 100%;
+	@include mq($bp3) {
+		width: 39%;
+		float: left;
+	}
+
+
+	h5 {
+		font-size: 1.6em;
+		font-family: $alpha-font-family;
+		@include padding-tb(0.6,0.1);
+	}
+
+	p {
+		font-size: 1.3em;
+		font-family: $beta-font-family;
+	}
+
+}
+
+.copyright {
+	display: none;
+	@include mq($bp3) {
+		font-size: 1.3em;
+		margin-top: 2em;
+		display: block;
+	}
+}
+
+.contact-form {
+	margin-top: 3em;
+	width: 100%;
+	@include mq($bp3) {
+		margin-top: 0em;
+		width: 50%;
+		float: right; 
+	}
+}
+
+
+//
+// social media footer
+//
+
+.sm {
+	//float: left;
+	padding-left: 0px;
+	@extend %clearfix;
+
+	li{
+		list-style-type: none;
+		width: 35px;
+		height: 35px;
+		float: left;
+		margin-right: 20px;
+	}
+
+}
+
+//
+// contact form 
+//
+
+#form2 {
+	border-top: 1px solid $gamma-ui-color;
+	padding-top: 3em;
+
+	@include mq($bp3) {
+		padding-top: 0;
+		border: 0;
+	}
+	p {
+		margin-bottom: 1em;
+		label {
+			padding-top: 0px;
+		}
+	}
+}
+
+
+
+//
+// back to top
+//
+
+
+.endline {
+	border: 0;
+    border-bottom: 1px solid lighten($alpha-text-color,50);
+    background: #999;
+}
+
+.back-to-top {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-bottom: 1.5em;
+	width: 200px;
+
+	a {
+		background-color: $alpha-ui-color;
+		border-radius: $radius;		
+		@include padding-tb(0.5,0.5);
+		@include px-padding-lr(2,2);
+		color: $beta-text-color;
+		width: 100%;
+		display: block;
+	}
+
+	a:hover, a:active {
+		background-color: lighten($alpha-ui-color,3);
+		text-decoration: none;
+	}
+
+
+}
+
+
+
+
