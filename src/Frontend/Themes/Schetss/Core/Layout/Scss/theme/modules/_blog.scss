@@ -20,79 +20,46 @@
 // articles
 //
 
+
+.article:nth-child(odd) {
+	clear: left;
+}
+
 .article {
 
 	padding-bottom: 3em;
 	margin-bottom: 4em;
 
 	@include mq($bp3) {
-		margin-bottom: 3em;
+		width: 49%;
+		float: left;
 	}
 
-	clear: both;
-	border-bottom: 1px solid $gamma-ui-color;
-
-
-	.left {
-		@include mq($bp3) {
-			width: 35%;
-			float: left;
-		}
-
+	
+	.top {
+		clear: both;
+		text-align: center;
 		.article-image {
-			height: 250px;
-			overflow: hidden;
-			@include mq($bp3) {
-				height: 200px;
-			}
-			@include mq($bp4) {
-				height: 250px;
-			}
-			
-		}
-
-
-		img {
-			//min-height: 250px;
-			width: 100%;
-			@include mq($bp3) {
-			//	min-height: 200px;
-				width: 100%;
-			}
-
-			@include mq($bp4) {
-			//	min-height: 250px;
+			img {
+				width: 150px;
+				height: 150px;
 			}
 			
 		}
 
 	}
 
-	.right {
+	.bottom {
+		text-align: center;
 
-		@include px-padding-lr(1,1);
-
-		@include mq($bp3) {
-			@include px-padding-lr(0,0);
-			width: 60%;
-			float: right;
-		}
-		
 		h2 {
 
-			margin-top: 0.5em; 
+			text-align: center;
 
-			@include mq($bp3) {
-				margin-top: -0.3em;	
-			}
-
-			padding-top: 0;
-		
-			padding-bottom: 0;
 		}
 
 		p {
-			float: left;
+			text-align: center;
 			font-size: 1.3em;
 			font-family: $beta-font-family;
 		}

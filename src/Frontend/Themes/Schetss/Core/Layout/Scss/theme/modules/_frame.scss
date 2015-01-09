@@ -53,6 +53,7 @@
 	float: left;
 
 	.logo {
+		@include margin-tb(0.2,0);
 		
 		width: 135px;
 		height: 25px;
@@ -166,11 +167,14 @@
 		float: left;
 	}
 
+	h5:first-child {
+		@include padding-tb(0.5,0.1)
+	}
 
 	h5 {
 		font-size: 1.6em;
 		font-family: $alpha-font-family;
-		@include padding-tb(0.6,0.1);
+		@include padding-tb(1,0.1);
 	}
 
 	p {
@@ -199,25 +203,6 @@
 	}
 }
 
-
-//
-// social media footer
-//
-
-.sm {
-	//float: left;
-	padding-left: 0px;
-	@extend %clearfix;
-
-	li{
-		list-style-type: none;
-		width: 35px;
-		height: 35px;
-		float: left;
-		margin-right: 20px;
-	}
-
-}
 
 //
 // contact form 

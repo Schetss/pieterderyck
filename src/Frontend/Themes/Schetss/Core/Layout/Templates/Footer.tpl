@@ -8,11 +8,6 @@
 	<div class="row">
 		<div class="footer">
 			<div class="contact-info">
-				<ul class="sm"> 
-					<li><a href="https://www.facebook.com/schetss" target="_blank"><img src="/src/Frontend/Core/Layout/images/facebook.png" alt="facebook" class="retina"></a></li>
-					<li><a href="https://twitter.com/schetss" target="_blank"><img src="/src/Frontend/Core/Layout/images/twitter.png" alt="twitter" class="retina"></a></li>
-					<li><a href="https://www.linkedin.com/company/schetss" target="_blank"><img src="/src/Frontend/Core/Layout/images/linkedin.png" alt="linkedin" class="retina"></a></li>
-				</ul>
 				
 				{* Contact Information *}
 				{option:positionBottomLeft}

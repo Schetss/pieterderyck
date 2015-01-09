@@ -85,7 +85,7 @@
 			width: 100%;
 			float: left;
 			@include horizontal-nav();
-			@include text-dimensions(14,1,0);
+			@include text-dimensions(16,1,0);
 		}
 
 		li {
@@ -109,12 +109,14 @@
 
 		a {
 			@include px-padding-lr(0,0);
+			outline: 0;
 		}
 
 		.selected {
 			background: none;
 			a {
 			color: $alpha-ui-color;
+			outline: 0;
 			}
 		}
 
@@ -211,12 +213,10 @@
 
 
 //
-// language Navigation
+// Fast link
 //
 
-
-
-.lan-nav {
+.fast-link {
 	position: absolute;
 	right: 0;
 	margin-top: -0.5em;
@@ -231,20 +231,20 @@
 	ul {
 		float: right;
 		@include horizontal-nav();
-		@include text-dimensions(14,1,0);
+		@include text-dimensions(16,1,0);
 	}
 
 	a {
 		color: $beta-text-color;
 		text-decoration: none;
 		font-weight: $beta-font-weight;
-		font-size: 0.8em;
+		font-size: 1em;
 		
 		background-color: $alpha-ui-color;
 		margin-left: 1em;
-		@include padding-tb(0.04,0.04);
-		padding-left: 0.35em;
-		padding-right: 0.35em;
+		@include padding-tb(0.1,0.1);
+		padding-left: 0.8em;
+		padding-right: 0.8em;
 		border-radius: 3px;
 		border: 1px solid $alpha-ui-color;
 

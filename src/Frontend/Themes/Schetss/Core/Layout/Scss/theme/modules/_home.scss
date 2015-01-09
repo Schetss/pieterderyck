@@ -135,12 +135,12 @@
 	}
 
 	a {
-		color: $beta-text-color;
+		color: $alpha-text-color;
 		font-size: 1.2em;
 		font-weight: $beta-font-weight;
-		background-color: $alpha-ui-color;
+		background-color: $gamma-ui-color;
 		border-radius: $radius;	
-		width: 200px;
+		width: 300px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -152,7 +152,7 @@
 	}
 
 	a:hover, a:active {
-		background-color: lighten($alpha-ui-color,3);
+		background-color: lighten($gamma-ui-color,5);
 		text-decoration: none;
 	}
 }
@@ -174,7 +174,7 @@
 	}
 
 	h1 {
-		@include padding-tb(0,1);
+		@include padding-tb(0,0.2);
 		color: $alpha-ui-color;
 		font-size: 2em;
 		line-height: 1.5em;
@@ -183,7 +183,6 @@
 
 	h2 {
 		@include padding-tb(0,1);
-		font-family: $beta-font-family;
 		font-size: 1.3em;
 		line-height: 1.7em;
 	}

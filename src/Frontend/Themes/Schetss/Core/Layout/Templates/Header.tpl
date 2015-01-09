@@ -10,12 +10,13 @@
 					<a title="{$siteTitle}" href="/"><img class="logo retina" src="/src/Frontend/Core/Layout/images/logo.png" alt="logo" /></a>
 				</div>
 				<div class="header-right">
-					{* Languages *}
-					{option:languages}
-						<nav class="lan-nav">
-							{include:Core/Layout/Templates/Languages.tpl}
-						</nav>
-					{/option:languages}
+					<nav class="fast-link">
+						<ul>
+							<li>
+								<a href="http://junkers.be/DealerLocations.aspx">Junkers installateur</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
