@@ -10,9 +10,9 @@
 
 .article-index {
 	margin-top: 1em;
-	@include mq($bp3) {
-		margin-top: 3em;
-	}
+	// @include mq($bp3) {
+	// 	margin-top: 3em;
+	// }
 }
 
 
@@ -27,13 +27,20 @@
 
 .article {
 
-	padding-bottom: 3em;
-	margin-bottom: 4em;
+	//padding-bottom: 3em;
+	margin-bottom: 5em;
 
 	@include mq($bp3) {
 		width: 49%;
 		float: left;
+
+		.article-content {
+			width: 85%;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
+
 
 	
 	.top {
@@ -41,8 +48,8 @@
 		text-align: center;
 		.article-image {
 			img {
-				width: 150px;
-				height: 150px;
+				width: 75px;
+				height: 75px;
 			}
 			
 		}
@@ -53,25 +60,26 @@
 		text-align: center;
 
 		h2 {
-
+			color: $alpha-ui-color;
 			text-align: center;
 
 		}
 
 		p {
+			// color: $beta-text-color;
 			text-align: center;
-			font-size: 1.3em;
-			font-family: $beta-font-family;
+			font-size: 1.2em;
+			//font-weight: 600;
+			margin: 0;
+			padding: 0;
+		}
+
+		.bottom-text {
+			padding: 1em;
 		}
 
 	}
 
-	.readmore {
-		font-size: 1.3em;
-		padding-top: 0; 
-		float: left;
-		font-family: $beta-font-family;
-	}
 
 }
 
