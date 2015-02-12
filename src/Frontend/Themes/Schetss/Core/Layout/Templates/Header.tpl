@@ -13,7 +13,7 @@
 					<nav class="fast-link">
 						<ul>
 							<li>
-								<a href="http://junkers.be/DealerLocations.aspx">Junkers installateur</a>
+								<a href="http://junkers.be" target="_blank">Junkers installateur</a>
 							</li>
 						</ul>
 					</nav>
