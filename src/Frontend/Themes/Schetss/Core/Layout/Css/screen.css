@@ -805,7 +805,7 @@ html {
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font: 400 100%/1.5 "proxima-nova", arial, sans-serif; }
+  font: 400 100%/1.5 arial, sans-serif; }
   @media (min-width: 71.25em) {
     html {
       font-size: 112.5%; } }
@@ -846,7 +846,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "proxima-nova", arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
   text-rendering: optimizelegibility; }
 
@@ -896,7 +896,7 @@ ol {
 table {
   text-align: left;
   width: 100%;
-  font-family: "proxima-nova", arial, sans-serif;
+  font-family: arial, sans-serif;
   border-spacing: 0;
   border-collapse: collapse;
   font-size: 0.875em;
@@ -904,7 +904,7 @@ table {
   margin-bottom: 3.4285714286em; }
 
 caption {
-  font-family: "proxima-nova", arial, sans-serif;
+  font-family: arial, sans-serif;
   text-align: left;
   border-bottom: 1px solid #b0b0b0;
   font-weight: 700;
@@ -975,7 +975,7 @@ textarea {
   border-radius: 5px;
   border: 0;
   color: #7d7d7d;
-  font-family: "proxima-nova", arial, sans-serif;
+  font-family: arial, sans-serif;
   margin: 0;
   width: 100%;
   display: block;
@@ -1077,15 +1077,15 @@ textarea {
   font-size: 1em !important; }
 
 ::-webkit-input-placeholder {
-  font-family: "ff-tisa-web-pro", serif;
+  font-family: "PT Serif Caption", serif;
   font-style: italic; }
 
 ::-moz-placeholder {
-  font-family: "ff-tisa-web-pro", serif;
+  font-family: "PT Serif Caption", serif;
   font-style: italic; }
 
 :-ms-input-placeholder {
-  font-family: "ff-tisa-web-pro", serif;
+  font-family: "PT Serif Caption", serif;
   font-style: italic; }
 
 input[type="submit"],
@@ -1239,12 +1239,12 @@ button {
     padding-bottom: 0.15em; }
   .contact-info h5 {
     font-size: 1.6em;
-    font-family: "proxima-nova", arial, sans-serif;
+    font-family: arial, sans-serif;
     padding-top: 1.5em;
     padding-bottom: 0.15em; }
   .contact-info p {
     font-size: 1.3em;
-    font-family: "ff-tisa-web-pro", serif; }
+    font-family: "PT Serif Caption", serif; }
 
 .copyright {
   display: none; }
@@ -1344,7 +1344,7 @@ button {
   width: 90%;
   margin-top: 2.5em; }
   .main-head-quote h1 {
-    font-family: "proxima-nova", arial, sans-serif;
+    font-family: arial, sans-serif;
     font-size: 2.1em;
     font-weight: 100;
     padding-bottom: 0; }
@@ -1355,7 +1355,7 @@ button {
       .main-head-quote h1 {
         font-size: 3em; } }
   .main-head-quote h2 {
-    font-family: "ff-tisa-web-pro", serif;
+    font-family: "PT Serif Caption", serif;
     font-size: 1.6em;
     line-height: 1.6em;
     font-weight: 100; }
@@ -1364,8 +1364,8 @@ button {
         font-size: 2em; } }
 
 .block1 {
-  margin-top: 4.5em;
-  margin-bottom: 4.5em; }
+  margin-top: 3em;
+  margin-bottom: 3em; }
 
 .greyBlock {
   background-color: #303030;
@@ -1374,7 +1374,7 @@ button {
   padding-top: 1.5em;
   padding-bottom: 3em; }
   .greyBlock h1 {
-    font-family: "proxima-nova", arial, sans-serif;
+    font-family: arial, sans-serif;
     font-size: 2.5em;
     font-weight: 100;
     padding-bottom: 0; }
@@ -1382,7 +1382,7 @@ button {
       .greyBlock h1 {
         font-size: 3em; } }
   .greyBlock h2 {
-    font-family: "ff-tisa-web-pro", serif;
+    font-family: "PT Serif Caption", serif;
     font-size: 1.5em;
     line-height: 1.6em;
     font-weight: 100; }
@@ -1432,7 +1432,7 @@ button {
     font-size: 1.3em;
     line-height: 1.7em; }
   .block2 p {
-    font-family: "ff-tisa-web-pro", serif;
+    font-family: "PT Serif Caption", serif;
     font-size: 1.3em;
     line-height: 1.7em; }
 
@@ -1581,7 +1581,7 @@ button {
   float: left;
   width: 100%; }
   .main-nav ul {
-    font-family: "proxima-nova", arial, sans-serif;
+    font-family: arial, sans-serif;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -1758,33 +1758,48 @@ button {
     color: #4679ac;
     background-color: #f8f8f8; }
 
-.article-index {
-  margin-top: 1em; }
-
 .article:nth-child(odd) {
   clear: left; }
 
+@media (min-width: 42.5em) {
+  .article:nth-child(even) {
+    float: right !important; } }
+.article:nth-child(2) {
+  padding-top: 1.2em;
+  padding-bottom: 0em; }
+
 .article {
-  margin-bottom: 5em; }
+  position: relative;
+  background-color: #e3e3e3;
+  padding-top: 1.2em;
+  padding-bottom: 0em;
+  margin-bottom: 2em; }
   @media (min-width: 42.5em) {
     .article {
-      width: 49%;
-      float: left; }
+      width: 48%;
+      float: left;
+      height: 300px; }
       .article .article-content {
-        width: 85%;
+        padding-top: 1.5em;
+        padding-bottom: 0em;
+        width: 90%;
         margin-left: auto;
         margin-right: auto; } }
   .article .top {
     clear: both;
     text-align: center; }
     .article .top .article-image img {
-      width: 75px;
-      height: 75px; }
+      width: 100px;
+      height: 100px; }
   .article .bottom {
     text-align: center; }
     .article .bottom h2 {
-      color: #4679ac;
+      font-size: 1.5em;
+      color: #636363;
       text-align: center; }
+      @media (min-width: 42.5em) {
+        .article .bottom h2 {
+          color: #4679ac; } }
     .article .bottom p {
       text-align: center;
       font-size: 1.2em;
@@ -1792,6 +1807,56 @@ button {
       padding: 0; }
     .article .bottom .bottom-text {
       padding: 1em; }
+
+.blog-overlay {
+  display: none; }
+  @media (min-width: 42.5em) {
+    .blog-overlay {
+      display: hidden;
+      top: 0;
+      position: absolute;
+      background-color: transparent;
+      background-color: rgba(48, 48, 48, 0.9);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6303030,endColorstr=#E6303030);
+      zoom: 1;
+      width: 100%;
+      height: 300px;
+      padding-top: 4.5em;
+      padding-bottom: 0em;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+      color: #f8f8f8; }
+      .blog-overlay hr {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%; }
+      .blog-overlay p {
+        font-family: "PT Serif Caption", serif;
+        font-weight: 600;
+        font-size: 1.2em;
+        margin-top: -0.7em;
+        padding-top: 0em; } }
+
+.blog-bottom {
+  font-family: "PT Serif Caption", serif;
+  color: #4679ac;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 0em;
+  padding-bottom: 1.5em; }
+  .blog-bottom p:first-child {
+    margin-top: 0.5em;
+    padding-top: 1em;
+    border-top: 1px solid #c9c9c9; }
+  .blog-bottom p {
+    padding-bottom: 0;
+    padding-top: 0;
+    text-align: center;
+    font-size: 1.2em; }
+  @media (min-width: 42.5em) {
+    .blog-bottom {
+      display: none; } }
 
 .date {
   font-size: 0.9em;

@@ -160,6 +160,62 @@ $(window).on("load", function() {
 
 
 
+//
+// BLOG OVERLAY
+//
+
+$(document).ready( function(){ 
+
+	if ($(window).width() > 680) {
+		$('.article').hover( 
+            //Mouseover function 
+            function(){ 
+                $(this).find('.blog-overlay').fadeIn("fast"); 
+            }, //Don't forget the comma here! 
+ 
+            //Mouseout function 
+            function(){ 
+               $(this).find('.blog-overlay').fadeOut("fast"); 
+            } 
+		); 
+	}
+	else {
+
+	}
+
+
+	var mq = window.matchMedia( "(max-width: 680px)" );
+	
+	$(window).resize(function() {
+ 		if (mq.matches) {			
+		    $('.blog-holder').removeClass('blog-overlay');
+	    	//$('.project-overlay').show();
+		}
+
+		else {
+			$('.blog-overlay').hide();
+		    $('.blog-holder').addClass('blog-overlay');
+		    $('.article').hover( 
+	            //Mouseover function 
+	            function(){ 
+	                $(this).find('.blog-overlay').slideDown("fast"); 
+	            }, //Don't forget the comma here! 
+	 
+	            //Mouseout function 
+	            function(){ 
+	               $(this).find('.blog-overlay').slideUp("fast"); 
+	            } 
+    		); 
+
+		}
+	
+	});
+
+}); 
+
+
+
+
 
 
 

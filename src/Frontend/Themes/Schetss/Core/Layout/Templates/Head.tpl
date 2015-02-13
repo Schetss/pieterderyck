@@ -32,8 +32,7 @@
 	-->
 	<!-- Fonts -->
 
-	<script src="//use.typekit.net/mcb2tyw.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Serif+Caption">
 
 	{* Windows 8 tile *}
 	<meta name="application-name" content="{$siteTitle}"/>

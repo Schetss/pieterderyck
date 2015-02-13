@@ -12,14 +12,14 @@ $show-baseline-grid: false; // toggle the visibility of the baseline (true/false
 $baseline-holder: holder; // set the classname of the element which will show the baseline
 $grid-color: rgba(#000,0.1); // set the baseline grid color and opacity
 
-$alpha-font-family	: "proxima-nova", arial, sans-serif;
+$alpha-font-family	: arial, sans-serif;
 $alpha-font-size	: 16; // pixel-value
 $alpha-font-weight	: 400;
 $alpha-line-height	: 1.5; // em-value
 $alpha-baseline-grid: 7; // pixel-value
 $alpha-leading		: 1; // multiplier
 
-$beta-font-family	: "ff-tisa-web-pro", serif;
+$beta-font-family	: 'PT Serif Caption', serif;
 $beta-font-weight	: 700;
 
 // Grid
@@ -82,7 +82,7 @@ $beta-text-color	: #f8f8f8; // White
 
 $alpha-ui-color		: #4679ac; // Blue
 $beta-ui-color		: #42587b; // dark blue
-$gamma-ui-color		: #f8c02f; // light grey
+$gamma-ui-color		: #f8c02f; // Yellow
 $delta-ui-color		: $beta-text-color;
 $epsilon-ui-color	: #59584E; // Grey
 

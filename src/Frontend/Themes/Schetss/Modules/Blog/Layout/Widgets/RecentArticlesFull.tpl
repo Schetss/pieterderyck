@@ -7,6 +7,7 @@
 	<section class="index-news">
 		{iteration:widgetBlogRecentArticlesFull}
 			<article class="article">
+
 				<div class="article-content">
 					<div class="top">
 						 <div class="article-image">
@@ -18,10 +19,13 @@
 						<header>
 							<h2>{$widgetBlogRecentArticlesFull.title}</h2>
 						</header>
-						<div class="bottom-text">
-							{option:widgetBlogRecentArticlesFull.text}{$widgetBlogRecentArticlesFull.text}{/option:widgetBlogRecentArticlesFull.text}
-						</div>
 					</div>
+				</div>
+				<div class="blog-bottom">
+					{option:widgetBlogRecentArticlesFull.text}{$widgetBlogRecentArticlesFull.text}{/option:widgetBlogRecentArticlesFull.text}
+				</div>
+				<div class="blog-holder blog-overlay">
+					{option:widgetBlogRecentArticlesFull.text}{$widgetBlogRecentArticlesFull.text}{/option:widgetBlogRecentArticlesFull.text}
 				</div>
 				<div class="clear"></div>
 			</article>
