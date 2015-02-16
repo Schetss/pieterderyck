@@ -6,6 +6,7 @@ var jsTheme =
 		jsTheme.mobileNav.init();
 		jsTheme.forms.init();
 		jsTheme.mediaQuery.init();
+		jsTheme.flexslider.init();
 		//console.log("javascript is locked and loaded!") // for testing purposes. Check your console. Delete after you finished reading this. :-)
 	}
 
@@ -68,6 +69,33 @@ jsTheme.mediaQuery =
 		    $('#nav-row').addClass('row');
 		}
 	}
+};
+
+jsTheme.flexslider = 
+{
+	init:function()
+	{
+		// function cycleImages() {
+
+	 //    	var $active = $('#slider .active');
+	 //    	var $next = ($active.next().length > 0) ? $active.next() : $('#slider img:first');
+  //     		$next.css('z-index',2);//move the next image up the pile
+  //     		$active.fadeOut(1500,function(){//fade out the top image
+	 //  			$active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+  //         		$next.css('z-index',3).addClass('active');//make the next image the top one
+  //     		});
+  //   	}
+
+		// $(document).ready(function(){
+		// 	setInterval(cycleImages(), 5000);
+		// });
+
+
+
+	}
+
+
+
 };
 
 
@@ -160,11 +188,12 @@ $(window).on("load", function() {
 
 
 
+
+$(document).ready( function(){ 
+
 //
 // BLOG OVERLAY
 //
-
-$(document).ready( function(){ 
 
 	if ($(window).width() > 680) {
 		$('.article').hover( 
@@ -198,12 +227,12 @@ $(document).ready( function(){
 		    $('.article').hover( 
 	            //Mouseover function 
 	            function(){ 
-	                $(this).find('.blog-overlay').slideDown("fast"); 
+	                $(this).find('.blog-overlay').fadeIn("fast"); 
 	            }, //Don't forget the comma here! 
 	 
 	            //Mouseout function 
 	            function(){ 
-	               $(this).find('.blog-overlay').slideUp("fast"); 
+	               $(this).find('.blog-overlay').fadeOut("fast"); 
 	            } 
     		); 
 
@@ -211,9 +240,30 @@ $(document).ready( function(){
 	
 	});
 
+
+	//
+	// SLIDESHOW
+	//
+
+	$('#slider img:first').addClass('active');
+
 }); 
 
 
+	function cycleImages(){
+      var $active = $('#slider .active');
+      var $next = ($active.next().length > 0) ? $active.next() : $('#slider img:first');
+      $next.css('z-index',2);//move the next image up the pile
+      $active.fadeOut(1500,function(){//fade out the top image
+	  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+          $next.css('z-index',3).addClass('active');//make the next image the top one
+      });
+    }
+
+	$(document).ready(function(){
+	// run every 7s
+	setInterval('cycleImages()', 7000);
+	})
 
 
 

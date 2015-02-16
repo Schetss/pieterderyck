@@ -1412,58 +1412,10 @@ button {
     text-decoration: none; }
 
 .block2 {
-  margin-top: 4.5em;
+  margin-top: 1.5em;
   margin-bottom: 3em;
   position: relative;
   overflow: hidden; }
-  @media (min-width: 42.5em) {
-    .block2 {
-      margin-top: 4.5em;
-      margin-bottom: 5.4em; } }
-  .block2 h1 {
-    padding-top: 0em;
-    padding-bottom: 0.3em;
-    color: #4679ac;
-    font-size: 2em;
-    line-height: 1.5em; }
-  .block2 h2 {
-    padding-top: 0em;
-    padding-bottom: 1.5em;
-    font-size: 1.3em;
-    line-height: 1.7em; }
-  .block2 p {
-    font-family: "PT Serif Caption", serif;
-    font-size: 1.3em;
-    line-height: 1.7em; }
-
-.block2Image {
-  width: 100%;
-  position: relative;
-  overflow: hidden; }
-  @media (min-width: 42.5em) {
-    .block2Image {
-      width: 35%;
-      position: absolute;
-      left: 0;
-      overflow: hidden; } }
-  .block2Image img {
-    max-width: none;
-    width: 100%;
-    margin-top: 0em;
-    margin-bottom: 1.5em; }
-    @media (min-width: 42.5em) {
-      .block2Image img {
-        width: 400%;
-        margin-top: 0em;
-        margin-bottom: 0em; } }
-    @media (min-width: 60em) {
-      .block2Image img {
-        width: 300%; } }
-
-@media (min-width: 42.5em) {
-  .block2Text {
-    width: 60%;
-    float: right; } }
 
 .main-content {
   width: 100%;
@@ -1827,6 +1779,8 @@ button {
       padding-right: 20px;
       text-align: center;
       color: #f8f8f8; }
+      .blog-overlay a {
+        color: #f8c02f; }
       .blog-overlay hr {
         margin-left: auto;
         margin-right: auto;
@@ -1845,6 +1799,13 @@ button {
   margin-right: 20px;
   padding-top: 0em;
   padding-bottom: 1.5em; }
+  .blog-bottom a {
+    color: #f8c02f;
+    background-color: #4679ac;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em; }
   .blog-bottom p:first-child {
     margin-top: 0.5em;
     padding-top: 1em;
@@ -1871,6 +1832,35 @@ article:last-child {
   border: 0;
   padding-bottom: 0em;
   margin-bottom: 0; }
+
+#slider {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden; }
+  @media (min-width: 42.5em) {
+    #slider {
+      height: 400px; } }
+  #slider img {
+    position: absolute;
+    z-index: 1;
+    height: auto;
+    max-width: none;
+    width: 150%; }
+    @media (min-width: 42.5em) {
+      #slider img {
+        width: 100%; } }
+  #slider img.activate {
+    z-index: 3; }
+
+.realisaties {
+  margin-top: 0em;
+  margin-bottom: 0.75em;
+  padding-top: 0em;
+  padding-bottom: 0.75em;
+  text-align: center;
+  font-size: 1.5em;
+  border-bottom: 1px solid #b0b0b0; }
 
 @media print {
   * {

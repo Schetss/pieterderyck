@@ -5,10 +5,8 @@
 <g id="Layer_1" display="none">
 </g>
 <g id="Layer_2">
-	<g>
-		<path fill="#4679AC" d="M175,115.7v75h-50v-50H75v50H25v-75l75-56.2L175,115.7z"/>
-		<polygon fill="#F8C02F" points="200,118.5 100,40.9 0,118.5 0,86.9 100,9.3 200,86.9 		"/>
-	</g>
+	<path fill="#4C4C4C" d="M175,115.7v75h-50v-50H75v50H25v-75l75-56.2L175,115.7z"/>
+	<polygon fill="#4679AC" points="200,118.5 100,40.9 0,118.5 0,86.9 100,9.3 200,86.9 	"/>
 </g>
 <g id="Layer_3">
 </g>

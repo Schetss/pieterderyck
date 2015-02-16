@@ -95,6 +95,11 @@
 		//display: block;
 		display: hidden;
 
+		a {
+			color: $gamma-ui-color;
+
+		}
+
 		top: 0;
 		position: absolute;
 		@include background-opacity($alpha-text-color, 0.9);
@@ -131,6 +136,15 @@
 
 
 .blog-bottom {
+
+
+		a {
+			color: $gamma-ui-color;
+			background-color: $alpha-ui-color;
+			@include px-padding-lr(1,1);
+			@include padding-tb(0.1,0.1);
+			
+		}
 
 	font-family: $beta-font-family;
 	color: $alpha-ui-color;

@@ -169,70 +169,13 @@
 //
 
 .block2 {
-	@include margin-tb(3,2);
+	@include margin-tb(1,2);
 	position: relative;
 	overflow: hidden;
 
-	@include mq($bp3) {
-		@include margin-tb(3,3.6);
-	}
-
-	h1 {
-		@include padding-tb(0,0.2);
-		color: $alpha-ui-color;
-		font-size: 2em;
-		line-height: 1.5em;
-
-	}
-
-	h2 {
-		@include padding-tb(0,1);
-		font-size: 1.3em;
-		line-height: 1.7em;
-	}
-
-	p {
-		font-family: $beta-font-family;
-		font-size: 1.3em;
-		line-height: 1.7em;
-	}
+	
 }
 
-.block2Image {
-	width: 100%;
-	position: relative;
-	overflow: hidden;
-
-	@include mq($bp3) {
-		width: 35%;
-		position: absolute;
-		left:0;
-		overflow: hidden;
-	}
-
-	img {
-		max-width: none;
-		width:100%;
-		@include margin-tb(0,1);
-
-
-		@include mq($bp3) {
-			width: 400%;
-			@include margin-tb(0,0);
-		}
-
-		@include mq($bp4) {
-			width: 300%;
-		}
-	}
-}
-
-.block2Text {
-	@include mq($bp3) {
-		width: 60%;
-		float: right;
-	}
-}
 
 
 
