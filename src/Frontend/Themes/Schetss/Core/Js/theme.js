@@ -6,7 +6,6 @@ var jsTheme =
 		jsTheme.mobileNav.init();
 		jsTheme.forms.init();
 		jsTheme.mediaQuery.init();
-		jsTheme.flexslider.init();
 		//console.log("javascript is locked and loaded!") // for testing purposes. Check your console. Delete after you finished reading this. :-)
 	}
 
@@ -70,34 +69,6 @@ jsTheme.mediaQuery =
 		}
 	}
 };
-
-jsTheme.flexslider = 
-{
-	init:function()
-	{
-		// function cycleImages() {
-
-	 //    	var $active = $('#slider .active');
-	 //    	var $next = ($active.next().length > 0) ? $active.next() : $('#slider img:first');
-  //     		$next.css('z-index',2);//move the next image up the pile
-  //     		$active.fadeOut(1500,function(){//fade out the top image
-	 //  			$active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
-  //         		$next.css('z-index',3).addClass('active');//make the next image the top one
-  //     		});
-  //   	}
-
-		// $(document).ready(function(){
-		// 	setInterval(cycleImages(), 5000);
-		// });
-
-
-
-	}
-
-
-
-};
-
 
 
 $(jsTheme.init);
@@ -262,7 +233,7 @@ $(document).ready( function(){
 
 	$(document).ready(function(){
 	// run every 7s
-	setInterval('cycleImages()', 7000);
+	setInterval('cycleImages()', 4000);
 	})
 
 
